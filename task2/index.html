@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Challengers Bangalore | Unofficial 2025 IPL Team Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <img src="rcb-logo-new.png" alt="RCB Logo" class="h-12 w-auto">
+                    <span class="ml-3 text-xl font-bold text-gray-800">Royal Challengers Bangalore</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-800 hover:text-pink-400 px-3 py-2 font-medium animated-border">Home</a>
+                    <a href="#team" class="text-gray-800 hover:text-pink-400 px-3 py-2 font-medium animated-border">Team</a>
+                    <a href="#matches" class="text-gray-800 hover:text-pink-400 px-3 py-2 font-medium animated-border">Matches</a>
+                    <a href="#news" class="text-gray-800 hover:text-pink-400 px-3 py-2 font-medium animated-border">News</a>
+                    <a href="#shop" class="text-gray-800 hover:text-pink-400 px-3 py-2 font-medium animated-border">Shop</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-800 hover:text-pink-400">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-pink-400">Home</a>
+                <a href="#team" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-pink-400">Team</a>
+                <a href="#matches" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-pink-400">Matches</a>
+                <a href="#news" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-pink-400">News</a>
+                <a href="#shop" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-pink-400">Shop</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient py-20">
+       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-6">Play Bold <span class="text-pink-500">2025</span></h1>
+      <p class="text-xl text-gray-700 mb-8">
+        Join us in our quest for the elusive IPL trophy with a squad that embodies passion, talent, and the spirit of Bengaluru.
+      </p>
+      <div class="flex space-x-4">
+        <a href="https://in.bookmyshow.com/sports/lucknow-super-giants-v-royal-challengers-bengaluru/ET00434753" target="_blank" rel="noopener noreferrer">
+          <button class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">
+            Buy Tickets
+          </button>
+        </a>
+        <a href="https://www.hotstar.com/in/sports/cricket/pbks-vs-dc/1540043315/video/live/watch?utm_campaign=IPL_2025_M66_Onebox_Live%2CIPL_2025_M66_Onebox_Live&utm_medium=onebox_new%2Conebox_new&utm_source=google#mp-login" target="_blank" rel="noopener noreferrer"></a>
+        <button class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-3 px-6 rounded-full border border-gray-300 transition duration-300 transform hover:scale-105">
+          Watch Live
+        </button>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Image Section -->
+    <div class="md:w-1/2 flex justify-center">
+      <img src="rcb-team.jpg" alt="RCB Team 2025" class="rounded-lg shadow-2xl max-w-full h-auto" style="max-height: 500px;">
+    </div>
+
+  </div>
+</div>
+
+    </section>
+
+    <!-- Countdown to Next Match -->
+    <section class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Next Match Countdown</h2>
+            <div class="flex justify-center">
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="countdown-item rounded-lg p-4 text-center shadow-md">
+                        <div class="text-4xl font-bold text-pink-500" id="days">00</div>
+                        <div class="text-gray-600">Days</div>
+                    </div>
+                    <div class="countdown-item rounded-lg p-4 text-center shadow-md">
+                        <div class="text-4xl font-bold text-blue-400" id="hours">00</div>
+                        <div class="text-gray-600">Hours</div>
+                    </div>
+                    <div class="countdown-item rounded-lg p-4 text-center shadow-md">
+                        <div class="text-4xl font-bold text-green-400" id="minutes">00</div>
+                        <div class="text-gray-600">Minutes</div>
+                    </div>
+                    <div class="countdown-item rounded-lg p-4 text-center shadow-md">
+                        <div class="text-4xl font-bold text-yellow-400" id="seconds">00</div>
+                        <div class="text-gray-600">Seconds</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <h3 class="text-xl font-semibold text-gray-800">RCB vs LSG</h3>
+                <p class="text-gray-600">Ekana Cricket Stadium B Ground</p>
+                <p class="text-gray-500">Tuesday, May 27, 2025 at 7:30 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+    Meet Our <span class="text-pink-500">Squad</span>
+  </h2>
+
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+        <!-- Player 1 -->
+    <div class="player-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500 ease-in-out">
+      <div class="relative">
+        <img src="Rajat Patidar.png" alt="Rajat Patidar" class="w-full h-64 object-cover">
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+          <h3 class="text-xl font-bold text-white">Rajat Patidar</h3>
+          <p class="text-pink-300">Batsman (C)</p>
+        </div>
+      </div>
+      <div class="p-4">
+        <div class="flex space-x-2">
+          <span class="bg-pink-100 text-pink-800 text-xs px-2 py-1 rounded">Right Hand</span>
+          <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Right Arm</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Player 2 -->
+    <div class="player-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500 ease-in-out">
+      <div class="relative">
+        <img src="Virat Kohli.png" alt="Virat Kohli" class="w-full h-64 object-cover">
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+          <h3 class="text-xl font-bold text-white">Virat Kohli</h3>
+          <p class="text-pink-300">Batsman</p>
+        </div>
+      </div>
+      <div class="p-4">
+        <div class="flex space-x-2">
+          <span class="bg-pink-100 text-pink-800 text-xs px-2 py-1 rounded">Right Hand</span>
+          <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Right Arm</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Player 3 -->
+    <div class="player-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500 ease-in-out">
+      <div class="relative">
+        <img src="Devdutt Padikkal.png" alt="Devdutt Padikkal" class="w-full h-64 object-cover">
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+          <h3 class="text-xl font-bold text-white">Devdutt Padikkal</h3>
+          <p class="text-pink-300">Batter</p>
+        </div>
+      </div>
+      <div class="p-4">
+        <div class="flex space-x-2">
+          <span class="bg-pink-100 text-pink-800 text-xs px-2 py-1 rounded">Right Hand</span>
+          <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Right Arm</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Player 4 -->
+    <div class="player-card bg-white rounded-lg overflow-hidden shadow-md transition duration-500 ease-in-out">
+      <div class="relative">
+        <img src="Yash Dayal.png" alt="Yash Dayal" class="w-full h-64 object-cover">
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+          <h3 class="text-xl font-bold text-white">Yash Dayal</h3>
+          <p class="text-pink-300">Bowler</p>
+        </div>
+      </div>
+      <div class="p-4">
+        <div class="flex space-x-2">
+          <span class="bg-pink-100 text-pink-800 text-xs px-2 py-1 rounded">Right Hand</span>
+          <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Right Arm</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Full Squad Button -->
+  <div class="text-center mt-10">
+    <button onclick="location.href='https://royalchallengers.com/rcb-squad-men'" 
+      class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+      View Full Squad
+    </button>
+  </div>
+</div>
+
+    </section>
+
+    <!-- Matches Section -->
+    <section id="matches" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Upcoming <span class="text-pink-500">Fixtures</span></h2>
+            <div class="bg-gray-50 rounded-xl p-6 shadow-md">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800">IPL 2025 Season</h3>
+                    <div class="flex space-x-2">
+                        <button class="bg-pink-500 text-white px-4 py-2 rounded-full text-sm">All Matches</button>
+                        <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full text-sm">Home</button>
+                        <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full text-sm">Away</button>
+                    </div>
+                </div>
+                
+                <!-- Match 1 -->
+                <div class="relative bg-white rounded-lg p-4 mb-4 shadow-sm border-l-4 border-pink-500">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div class="flex items-center mb-4 md:mb-0">
+                            <div class="flex items-center w-32">
+                                <img src="rcb-logo-new.png" alt="RCB" class="h-10 w-10">
+                                <span class="ml-2 font-medium">RCB</span>
+                            </div>
+                            <div class="mx-4 text-center">
+                                <div class="text-sm text-gray-500">May 27, 7:30 PM</div>
+                                <div class="font-medium">VS</div>
+                            </div>
+                            <div class="flex items-center w-32">
+                                <img src="https://ssl.gstatic.com/onebox/media/sports/logos/82AP_EDcTMdcVlCqM4NgMg_96x96.png" alt="MI" class="h-10 w-10">
+                                <span class="ml-2 font-medium">LSG</span>
+                            </div>
+                        </div>
+                        <div class="text-center md:text-right">
+                            <div class="text-sm text-gray-600">Ekana Cricket Stadium B Ground</div>
+                           <a href="https://in.bookmyshow.com/sports/lucknow-super-giants-v-royal-challengers-bengaluru/ET00434753" target="_blank" rel="noopener noreferrer">
+                            <button class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">Buy Tickets
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Match 2 -->
+                <div class="bg-white rounded-lg p-4 mb-4 shadow-sm border-l-4 border-blue-400">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div class="flex items-center mb-4 md:mb-0">
+                            <div class="flex items-center w-32">
+                                <span class="ml-2 font-medium">TBD</span>
+                            </div>
+                            <div class="mx-4 text-center">
+                                <div class="text-sm text-gray-500">May 29, 7:30 PM</div>
+                                <div class="font-medium">VS</div>
+                            </div>
+                            <div class="flex items-center w-32">
+                                <span class="ml-2 font-medium">TBD</span>
+                            </div>
+                        </div>
+                        <div class="text-center md:text-right">
+                            <div class="text-sm text-gray-600">Maharaja Yadavindra Singh International Cricket Stadium</div>
+                            <button class="mt-2 bg-blue-400 hover:bg-blue-500 text-white text-sm font-medium py-1 px-4 rounded-full">
+                                Remind Me
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Match 3 -->
+                <div class="bg-white rounded-lg p-4 shadow-sm border-l-4 border-green-400">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                        <div class="flex items-center mb-4 md:mb-0">
+                            <div class="flex items-center w-32">
+                                <span class="ml-2 font-medium">TBD</span>
+                            </div>
+                            <div class="mx-4 text-center">
+                                <div class="text-sm text-gray-500">May 30, 7:30 PM</div>
+                                <div class="font-medium">VS</div>
+                            </div>
+                            <div class="flex items-center w-32">
+                                <span class="ml-2 font-medium">TBD</span>
+                            </div>
+                        </div>
+                        <div class="text-center md:text-right">
+                              <div class="text-sm text-gray-600">Maharaja Yadavindra Singh International Cricket Stadium</div>
+                            <button class="mt-2 bg-green-400 hover:bg-green-500 text-white text-sm font-medium py-1 px-4 rounded-full">
+                                Remind Me
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">Season <span class="text-pink-500">Statistics</span></h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-pink-50 rounded-xl p-6 text-center shadow-md">
+                        <div class="text-4xl font-bold text-pink-600 mb-2">13</div>
+                        <div class="text-gray-700">Matches Played</div>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-6 text-center shadow-md">
+                        <div class="text-4xl font-bold text-blue-600 mb-2">8</div>
+                        <div class="text-gray-700">Matches Won</div>
+                    </div>
+                    <div class="bg-green-50 rounded-xl p-6 text-center shadow-md">
+                        <div class="text-4xl font-bold text-green-600 mb-2">4</div>
+                        <div class="text-gray-700">Matches Lost</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Latest <span class="text-pink-500">News</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- News 1 -->
+                <div class="news-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300 ease-in-out">
+                    <img src="https://www.royalchallengers.com/PRRCB01/public/styles/1061x767_landscape/public/2025-05/MOH_1064.jpg?itok=7eNAcxM1" alt="Rajat Patidar" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>May 16, 2025</span>
+                            <span class="mx-2">•</span>
+                            <span>Player Spotlight</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">I didn’t want to come on as a replacement – Rajat Patidar on his return to RCB</h3>
+                        <p class="text-gray-600 mb-4">It is not easy being released by a franchise as popular as RCB. However, the beauty of cricket is that surprises can come in at any point in time.</p>
+                        <a href="https://www.royalchallengers.com/rcb-cricket-news/news/i-didnt-want-to-come-on-as-a-replacement-rajat-patidar-on-his-return-to-rcb" class="text-pink-500 font-medium flex items-center">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- News 2 -->
+                <div class="news-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300 ease-in-out">
+                    <img src="https://www.royalchallengers.com/PRRCB01/public/styles/1061x767_landscape/public/2025-05/J62_3338.JPG?itok=A7Jyr0qk" alt="Virat Kohli" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>May 2, 2025</span>
+                            <span class="mx-2">•</span>
+                            <span>Player Spotlight</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Virat Kohli explains the feeling of sticking with RCB for 18 years</h3>
+                        <p class="text-gray-600 mb-4">IPL set foot in its 18th year in 2025 and the entire tournament has gone through a massive transition ever since its inception. No matter the ebbs and flows, no matter the wax </p>
+                        <a href="https://www.royalchallengers.com/rcb-cricket-news/news/virat-kohli-explains-the-feeling-of-sticking-with-rcb-for-18-years" class="text-pink-500 font-medium flex items-center">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- News 3 -->
+                <div class="news-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300 ease-in-out">
+                    <img src="https://www.royalchallengers.com/PRRCB01/public/styles/1061x767_landscape/public/2025-04/DM46S18__3152.jpg?itok=bZqm0Agn" alt="Krunal Pandya" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>April 28, 2025</span>
+                            <span class="mx-2">•</span>
+                            <span>Player Spotlight</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">We can take down the bowling – How Krunal Pandya’s strong belief got RCB home</h3>
+                        <p class="text-gray-600 mb-4">Krunal Pandya has been quite a sensation for the Royal Challengers Bengaluru in the ongoing season. His all-round performance against Delhi Capitals </p>
+                        <a href="https://royalchallengers.com/rcb-cricket-news/news/we-can-take-down-the-bowling-how-krunal-pandyas-strong-belief-got-rcb-home" class="text-pink-500 font-medium flex items-center">
+                            Read More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button onclick="location.href='https://royalchallengers.com/rcb-cricket-news'" 
+                    class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">View All News
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Fan Zone Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Fan <span class="text-pink-500">Zone</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Poll -->
+                <div class="bg-pink-50 rounded-xl p-8 shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Fan Poll</h3>
+                    <p class="text-gray-700 mb-6">Who has been RCB's best performer so far in IPL 2025?</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <input type="radio" id="option1" name="poll" class="h-4 w-4 text-pink-600 focus:ring-pink-500">
+                            <label for="option1" class="ml-3 text-gray-700">Virat Kohli</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="option2" name="poll" class="h-4 w-4 text-pink-600 focus:ring-pink-500">
+                            <label for="option2" class="ml-3 text-gray-700">Rajat Patidar</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="option3" name="poll" class="h-4 w-4 text-pink-600 focus:ring-pink-500">
+                            <label for="option3" class="ml-3 text-gray-700">Devdutt Padikkal</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="radio" id="option4" name="poll" class="h-4 w-4 text-pink-600 focus:ring-pink-500">
+                            <label for="option4" class="ml-3 text-gray-700">Yash Dayal</label>
+                        </div>
+                    </div>
+                    
+                    <button class="mt-6 bg-pink-500 hover:bg-pink-600 text-white font-medium py-2 px-6 rounded-full">
+                        Submit Vote
+                    </button>
+                </div>
+                
+                <!-- Social Media -->
+                <div class="bg-blue-50 rounded-xl p-8 shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Join The Conversation</h3>
+                    <p class="text-gray-700 mb-6">Connect with fellow RCB fans across social media platforms.</p>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <a href="https://x.com/rcbtweets?lang=en" class="bg-white rounded-lg p-4 flex items-center shadow-sm hover:shadow-md transition duration-300">
+                            <i class="fab fa-twitter text-blue-400 text-2xl mr-3 social-icon"></i>
+                            <div>
+                                <div class="font-medium text-gray-800">Twitter</div>
+                                <div class="text-sm text-gray-500">@RCBTweets</div>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/royalchallengersbangalore/" class="bg-white rounded-lg p-4 flex items-center shadow-sm hover:shadow-md transition duration-300">
+                            <i class="fab fa-instagram text-pink-500 text-2xl mr-3 social-icon"></i>
+                            <div>
+                                <div class="font-medium text-gray-800">Instagram</div>
+                                <div class="text-sm text-gray-500">@royalchallengersbangalore</div>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/RoyalChallengersBangalore/" class="bg-white rounded-lg p-4 flex items-center shadow-sm hover:shadow-md transition duration-300">
+                            <i class="fab fa-facebook-f text-blue-600 text-2xl mr-3 social-icon"></i>
+                            <div>
+                                <div class="font-medium text-gray-800">Facebook</div>
+                                <div class="text-sm text-gray-500">Royal Challengers Bangalore</div>
+                            </div>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCCq1xDJMBRF61kiOgU90_kw" class="bg-white rounded-lg p-4 flex items-center shadow-sm hover:shadow-md transition duration-300">
+                            <i class="fab fa-youtube text-red-500 text-2xl mr-3 social-icon"></i>
+                            <div>
+                                <div class="font-medium text-gray-800">YouTube</div>
+                                <div class="text-sm text-gray-500">RCB TV</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-green-50 rounded-xl p-8 shadow-md">
+                <h3 class="text-xl font-bold text-gray-800 mb-6">Fan of the Match</h3>
+                <div class="flex flex-col md:flex-row items-center">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Fan" class="h-24 w-24 rounded-full object-cover border-4 border-white shadow-md mb-4 md:mb-0 md:mr-6">
+                    <div class="text-center md:text-left">
+                        <h4 class="text-lg font-bold text-gray-800">Priya Sharma</h4>
+                        <p class="text-gray-600 mb-3">From Bengaluru</p>
+                        <p class="text-gray-700">"I've been supporting RCB since 2009 and never miss a home game. The energy at Chinnaswamy is unmatched!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Official <span class="text-pink-500">Merchandise</span></h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="product01.png" alt="RCB Jersey" class="w-full h-64 object-contain p-4">
+                        <div class="absolute top-2 right-2 bg-pink-500 text-white text-xs font-bold px-2 py-1 rounded-full">NEW</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-gray-800 mb-1">RCB Official Jersey 2025</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm ml-2">(128)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-pink-500">₹4,999</span>
+                            <button class="bg-pink-500 hover:bg-pink-600 text-white text-sm font-medium py-1 px-3 rounded-full">
+                                <i class="fas fa-shopping-cart mr-1"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="rcb-cap.png" alt="RCB Cap" class="w-full h-64 object-contain p-4">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-gray-800 mb-1">RCB Premium Cap</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm ml-2">(94)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-pink-500">₹899</span>
+                            <button class="bg-pink-500 hover:bg-pink-600 text-white text-sm font-medium py-1 px-3 rounded-full">
+                                <i class="fas fa-shopping-cart mr-1"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="relative">
+                        <img src="rcb-bottle.png" alt="RCB Bottle" class="w-full h-64 object-contain p-4">
+                        <div class="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">SALE</div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-gray-800 mb-1">RCB Stainless Steel Bottle</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm ml-2">(156)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-lg font-bold text-pink-500">₹649</span>
+                                <span class="text-sm text-gray-500 line-through ml-1">₹899</span>
+                            </div>
+                            <button class="bg-pink-500 hover:bg-pink-600 text-white text-sm font-medium py-1 px-3 rounded-full">
+                                <i class="fas fa-shopping-cart mr-1"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <img src="rcb-keychain.png" alt="RCB Keychain" class="w-full h-64 object-contain p-4">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold text-gray-800 mb-1">RCB Keychain Set</h3>
+                        <div class="flex items-center mb-2">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-600 text-sm ml-2">(72)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-pink-500">₹349</span>
+                            <button class="bg-pink-500 hover:bg-pink-600 text-white text-sm font-medium py-1 px-3 rounded-full">
+                                <i class="fas fa-shopping-cart mr-1"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://shop.royalchallengers.com/" target="_blank" rel="noopener noreferrer">
+                     <button class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105"> Visit Official Store
+                     </button>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Stay Updated With RCB</h2>
+            <p class="text-xl text-white mb-8">Subscribe to our newsletter for exclusive updates, offers, and behind-the-scenes content.</p>
+            
+            <div class="flex flex-col sm:flex-row max-w-md mx-auto sm:max-w-xl">
+                <input type="email" placeholder="Your email address" class="flex-grow px-5 py-3 rounded-l-full sm:rounded-r-none rounded-full focus:outline-none mb-2 sm:mb-0">
+                <button class="bg-black hover:bg-gray-800 text-white font-bold px-6 py-3 rounded-r-full sm:rounded-l-none rounded-full transition duration-300">
+                    Subscribe
+                </button>
+            </div>
+            
+            <div class="flex justify-center space-x-6 mt-8">
+                <a href="https://www.facebook.com/RoyalChallengersBangalore/" class="text-white social-icon"><i class="fab fa-facebook-f text-2xl"></i></a>
+                <a href="https://x.com/rcbtweets?lang=en" class="text-white social-icon"><i class="fab fa-twitter text-2xl"></i></a>
+                <a href="https://www.instagram.com/royalchallengersbangalore/" class="text-white social-icon"><i class="fab fa-instagram text-2xl"></i></a>
+                <a href="https://www.youtube.com/channel/UCCq1xDJMBRF61kiOgU90_kw" class="text-white social-icon"><i class="fab fa-youtube text-2xl"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Royal_Challengers_Bangalore_2020.svg/1200px-Royal_Challengers_Bangalore_2020.svg.png" alt="RCB Logo" class="h-16 w-auto mb-4">
+                    <p class="text-gray-400">Royal Challengers Bangalore, owned by United Spirits, represent the city of Bengaluru in the Indian Premier League.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#team" class="text-gray-400 hover:text-white">Team</a></li>
+                        <li><a href="#matches" class="text-gray-400 hover:text-white">Matches</a></li>
+                        <li><a href="#news" class="text-gray-400 hover:text-white">News</a></li>
+                        <li><a href="#shop" class="text-gray-400 hover:text-white">Shop</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Information</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://royalchallengers.com/about-us" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#https://royalchallengers.com/privacy-policy" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="https://royalchallengers.com/terms-conditions" class="text-gray-400 hover:text-white">Terms & Conditions</a></li>
+                        <li><a href="https://royalchallengers.com/contact-us" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact</h3>
+                    <address class="text-gray-400 not-italic">
+                        <p class="mb-2">M. Chinnaswamy Stadium</p>
+                        <p class="mb-2">Queen's Road, Bengaluru</p>
+                        <p class="mb-2">Karnataka 560001, India</p>
+                        <p class="mb-2">Email: info@royalchallengers.com</p>
+                        <p>Phone: +91 80 2345 6789</p>
+                    </address>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2025 Royal Challengers Bangalore. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="https://www.facebook.com/RoyalChallengersBangalore/" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/rcbtweets?lang=en" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/royalchallengersbangalore/" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCCq1xDJMBRF61kiOgU90_kw" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
