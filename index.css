@@ -1,0 +1,35 @@
+body {
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sidebar-wrapper {
+  width: 240px;
+  min-height: 100vh;
+  background-color: #0f3d3e;
+  color: white;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 0;
+  color: white;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #136162;
+  padding-left: 10px;
+}
+
+.header {
+  background-color: #e0f7f4;
+  border-bottom: 1px solid #ccc;
+}
+
+.todo-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}

@@ -1,0 +1,73 @@
+.tictactoe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #fef6fb;
+  min-height: 100vh;
+}
+
+.tictactoe-title {
+  font-size: 2rem;
+  color: #cc6dfd;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tictactoe-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tictactoe-cell {
+  width: 100px;
+  height: 100px;
+  background-color: #fff5fe;
+  border: 2px solid #ecd4ff;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #cc6dfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  border-radius: 12px;
+}
+
+.tictactoe-cell:hover {
+  background-color: #f9eaff;
+  transform: scale(1.05);
+}
+
+.tictactoe-status {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.reset-button {
+  padding: 10px 20px;
+  background-color: #cc6dfd;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px #b357f4;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reset-button:hover {
+  background-color: #b357f4;
+}
+
+.reset-button:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px #9f45e4;
+}
