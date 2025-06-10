@@ -1,0 +1,67 @@
+.dashboard-container {
+  padding: 40px;
+  background-color: #fef6fb;
+  border-radius: 20px;
+  max-width: 850px;
+  margin: 40px auto;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-title {
+  color: #cc6dfd;
+  font-weight: 700;
+  margin-bottom: 35px;
+  font-size: 2.2rem;
+  text-shadow: 1px 1px 2px #f3e5f5;
+}
+
+/* Centered progress section */
+.dashboard-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.stat-card {
+  background: linear-gradient(145deg, #ffffff, #f7eafc);
+  padding: 25px 20px;
+  border-radius: 20px;
+  width: 180px;
+  box-shadow: 6px 6px 12px #e0cde4, -6px -6px 12px #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: scale(1.07);
+  box-shadow: 4px 4px 10px #d9c1e3, -4px -4px 10px #ffffff;
+}
+
+.stat-card h4 {
+  margin-bottom: 12px;
+  color: #8e44ad;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.stat-card p {
+  font-size: 1.8rem;
+  color: #6c3483;
+  font-weight: 700;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

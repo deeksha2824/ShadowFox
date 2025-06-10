@@ -1,0 +1,115 @@
+/* TicTacToe.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf6fd; /* Soft pastel background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tictactoe-container {
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #fff0fc;
+
+  /* Perfect center */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tic-tac-toe-title {
+  font-size: 2rem;
+  color: #a56cc1;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  background-color: #fde2ff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  color: #6c3483;
+  cursor: pointer;
+
+  /* 3D shadow */
+  box-shadow:
+    0 4px 6px rgba(108, 52, 131, 0.3),
+    inset 0 -3px 5px rgba(255, 255, 255, 0.6);
+
+  /* Smooth transform */
+  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.cell:hover {
+  background-color: #e8d3ff;
+  transform: scale(1.1) translateZ(20px);
+  box-shadow:
+    0 8px 15px rgba(108, 52, 131, 0.5),
+    inset 0 -4px 6px rgba(255, 255, 255, 0.7);
+}
+
+.cell:active {
+  transform: scale(0.95);
+  box-shadow:
+    0 2px 4px rgba(108, 52, 131, 0.2),
+    inset 0 2px 6px rgba(255, 255, 255, 0.8);
+}
+
+.status {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #a56cc1;
+}
+
+.reset-button {
+  margin-top: 15px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  background-color: #dab6fc;
+  color: #5b2c6f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  /* 3D shadow */
+  box-shadow:
+    0 4px 8px rgba(91, 44, 111, 0.3),
+    inset 0 -3px 6px rgba(255, 255, 255, 0.6);
+
+  transition: background-color 0.2s ease, box-shadow 0.3s ease, transform 0.15s ease;
+}
+
+.reset-button:hover {
+  background-color: #c69af7;
+  box-shadow:
+    0 8px 18px rgba(91, 44, 111, 0.5),
+    inset 0 -4px 7px rgba(255, 255, 255, 0.75);
+  transform: scale(1.05);
+}
+
+.reset-button:active {
+  transform: scale(0.95);
+  box-shadow:
+    0 2px 5px rgba(91, 44, 111, 0.2),
+    inset 0 2px 6px rgba(255, 255, 255, 0.85);
+}
